@@ -1,0 +1,5 @@
+.content {
+    margin-left:500px; /* ترك مساحة للشريط الجانبي */
+    padding: 20px;
+    flex: 1;
+}

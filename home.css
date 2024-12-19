@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.unordered-list {
+    list-style-type: square; /* تغيير شكل النقاط */
+    padding: 10px; /* إضافة مسافة داخلية */
+    background-color: #fff; /* لون خلفية القائمة */
+    border: 1px solid #ccc; /* حدود القائمة */
+    border-radius: 5px; /* زوايا مدورة */
+}
+
+.unordered-list li {
+    margin: 5px 0; /* إضافة مسافة بين العناصر */
+    padding: 5px; /* إضافة مسافة داخلية للعناصر */
+    background-color: #e0e0e0; /* لون خلفية العناصر */
+}
+
+.ordered-list {
+    list-style-type: decimal; /* شكل الأرقام */
+    padding: 10px; /* إضافة مسافة داخلية */
+    background-color: #fff; /* لون خلفية القائمة */
+    border: 1px solid #ccc; /* حدود القائمة */
+    border-radius: 5px; /* زوايا مدورة */
+}
+
+.ordered-list li {
+    margin: 5px 0; /* إضافة مسافة بين العناصر */
+    padding: 5px; /* إضافة مسافة داخلية للعناصر */
+    background-color: #d0d0d0; /* لون خلفية العناصر */
+}
+

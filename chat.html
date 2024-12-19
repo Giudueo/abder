@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول وإنشاء حساب</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <!-- شاشة تسجيل الدخول -->
+    <div id="login-screen" class="auth-container">
+        <h2>تسجيل الدخول</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="اسم المستخدم" required>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+        <p>ليس لديك حساب؟ <a href="#" id="show-register">إنشاء حساب</a></p>
+    </div>
+
+    <!-- شاشة إنشاء الحساب -->
+    <div id="register-screen" class="auth-container" style="display: none;">
+        <h2>إنشاء حساب</h2>
+        <form id="register-form">
+            <input type="text" id="register-username"placeholder="اسم المستخدم" required>
+            <input type="password" id="register-password" placeholder="كلمة المرور" required>
+            <button type="submit">إنشاء الحساب</button>
+        </form>
+        <p>لديك حساب بالفعل؟ <a href="#" id="show-login">تسجيل الدخول</a></p>
+    </div>
+
+    <!-- شاشة الدردشة -->
+    <div id="chat-screen" class="chat-container" style="display: none;">
+        <header class="chat-header">
+            <h1>دردشة تفاعلية</h1>
+            <button id="logout">تسجيل الخروج</button>
+        </header>
+        <main class="chat-window" id="chat-window"></main>
+        <footer class="chat-input">
+            <form id="chat-form">
+                <input type="text" id="message" placeholder="اكتب رسالتك..." required>
+                <button type="submit">إرسال</button>
+            </form>
+        </footer>
+    </div>
+    <div class="message sent">
+        <span class="username">اسم المستخدم</span>
+        <p>هذه رسالة مرسلة.</p>
+        <span class="time">10:00 AM</span>
+    </div>
+    
+    <div class="chat-container">
+        <!-- شريط العنوان -->
+        <div class="chat-header">
+            <div class="user-info">
+                <img src="user-avatar.png" alt="User Avatar" class="avatar">
+                <span class="username">اسم المستخدم</span>
+            </div>
+            <div class="actions">
+                <span class="icon">⋮</span>
+            </div>
+        </div>
+
+        <!-- نافذة الرسائل -->
+        <div class="chat-window">
+            <div class="message sent">
+                <span class="username">أنا</span>
+                <p>مرحبًا، كيف حالك؟</p>
+                <span class="time">10:00 AM</span>
+            </div>
+            <div class="message received">
+                <span class="username">اسم المستخدم</span>
+                <p>بخير، شكرًا!</p>
+                <span class="time">10:05 AM</span>
+            </div>
+        </div>
+
+        <!-- مربع إدخال الرسائل -->
+        <div class="chat-input">
+            <input type="text" placeholder="اكتب رسالة...">
+            <button>⏎</button>
+        </div>
+    </div>
+</body>
+    <script src="chat.js"></script>
+</body>
+</html>
